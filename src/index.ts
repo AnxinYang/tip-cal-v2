@@ -1,3 +1,4 @@
 import cc from 'ccts';
 
-cc.select()
+cc.select('#root')
+    .text('hello world')
