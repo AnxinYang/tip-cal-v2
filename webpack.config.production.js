@@ -1,9 +1,9 @@
 const path = require('path');
 
 module.exports = {
-    devtool: 'inline-source-map',
+    devtool: 'none',
     entry: './src/index.ts',
-    mode: 'development',
+    mode: 'production',
     module: {
         rules: [{
             test: /\.tsx?$/,

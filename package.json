@@ -6,7 +6,7 @@
   "scripts": {
     "init": "npm install",
     "build": "webpack -p --config webpack.config.production.js",
-    "start": "webpack-dev-server --config webpack.config.dev.js --host 0.0.0.0 --port 1992 --display-error-details",
+    "start": "webpack-dev-server --config webpack.config.dev.js",
     "dev": "webpack --config webpack.config.dev.js --watch",
     "scss": "sass --watch src/main.scss build/main.css"
   },
