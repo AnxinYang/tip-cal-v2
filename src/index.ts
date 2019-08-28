@@ -1,1 +1,3 @@
-console.log('hello world!')
+import cc from 'ccts';
+
+cc.select()

@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/AnxinYang/tip-cal-v2#readme",
   "dependencies": {
-    "ccts": "^1.0.1"
+    "ccts": "^1.0.2"
   }
 }
