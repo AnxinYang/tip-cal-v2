@@ -1,0 +1,43 @@
+#root {
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+    padding: 32px;
+    max-width: 500px;
+    margin: auto;
+}
+
+#tip-selection label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#tip-selection section {
+    display: flex;
+}
+
+#tip-selection div {
+    padding: 8px 8px;
+    text-align: center;
+    border: 1px solid $border-normal;
+    flex-grow: 1;
+    color: $font-color-dark;
+    transition: 0.3s;
+}
+
+#tip-selection div strong,
+span {
+    display: block;
+    font-size: $font-size-small;
+    color: inherit;
+    text-align: center;
+}
+
+#tip-selection div span:nth-of-type(even) {
+    margin-bottom: 32px;
+}
+
+#tip-selection div strong {
+    font-size: $font-size-fine;
+    color: $font-color-fine;
+}

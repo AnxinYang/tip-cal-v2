@@ -11,9 +11,28 @@
     vertical-align: baseline;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
         "Helvetica Neue", sans-serif;
-    font-size: 12px;
+    font-size: $font-size-normal;
+    color: $font-color-normal;
 }
 
 body {
-    background: $main-background;
+    background: $background-normal;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    background-color: $background-light;
+    padding: 4px 8px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }

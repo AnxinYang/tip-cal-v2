@@ -1,0 +1,20 @@
+.section {
+    margin-bottom: 32px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.input-container label {
+    margin-right: 8px;
+}
+
+.input-container input {
+    flex-grow: 1;
+    text-align: right;
+    font-weight: bold;
+    min-width: 50px;
+}

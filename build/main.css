@@ -7,11 +7,96 @@
   text-align: left;
   vertical-align: baseline;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 12px;
+  font-size: 22px;
+  color: #e8e8e8;
 }
 
 body {
   background: #202020;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  background-color: #404040;
+  padding: 4px 8px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.section {
+  margin-bottom: 32px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.input-container label {
+  margin-right: 8px;
+}
+
+.input-container input {
+  flex-grow: 1;
+  text-align: right;
+  font-weight: bold;
+  min-width: 50px;
+}
+
+#root {
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  padding: 32px;
+  max-width: 500px;
+  margin: auto;
+}
+
+#tip-selection label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+#tip-selection section {
+  display: flex;
+}
+
+#tip-selection div {
+  padding: 8px 8px;
+  text-align: center;
+  border: 1px solid #484848;
+  flex-grow: 1;
+  color: #c8c8c8;
+  transition: 0.3s;
+}
+
+#tip-selection div strong,
+span {
+  display: block;
+  font-size: 16px;
+  color: inherit;
+  text-align: center;
+}
+
+#tip-selection div span:nth-of-type(even) {
+  margin-bottom: 32px;
+}
+
+#tip-selection div strong {
+  font-size: 12px;
+  color: gray;
 }
 
 /*# sourceMappingURL=main.css.map */
