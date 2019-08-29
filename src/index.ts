@@ -3,7 +3,7 @@ import cc, { ccd3 } from 'ccts';
 if ('serviceWorker' in navigator) {
     console.log('Service worker supported!');
     try {
-        navigator.serviceWorker.register('service.js');
+        navigator.serviceWorker.register('./build/service.js');
         console.log('Service worker registered.')
     } catch (e) {
         console.log('Service worker failed to register. - WTH!?')
