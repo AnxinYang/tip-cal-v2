@@ -85,9 +85,9 @@ let tipSelection = root.append('div')
     .append('span')
     .bind('subtotal', function (subtotal: number) {
         this.text(function (d: number) {
-            let total = Math.floor(subtotal + subtotal * d / 100).toFixed(2);
+            let total = Math.floor((subtotal + subtotal * d / 100) / 100).toFixed(2);
 
-            return ((+(total) - subtotal) / 100).toFixed(2);
+            return ((+(total) - subtotal / 100)).toFixed(2);
         })
 
     })
@@ -109,9 +109,9 @@ let tipSelection = root.append('div')
     .append('span')
     .bind('subtotal', function (subtotal: number) {
         this.text(function (d: number) {
-            let total = Math.ceil(subtotal + subtotal * d / 100).toFixed(2);
+            let total = Math.ceil((subtotal + subtotal * d / 100) / 100).toFixed(2);
 
-            return ((+(total) - subtotal) / 100).toFixed(2);
+            return ((+(total) - subtotal / 100)).toFixed(2);
         })
 
     })
